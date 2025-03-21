@@ -1,0 +1,43 @@
+/* Định dạng thẻ card để hiển thị sản phẩm */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03); /* Hiệu ứng phóng to nhẹ khi hover */
+}
+
+/* Ảnh sản phẩm */
+.card-img-top {
+    width: 100%;            /* Chiếm toàn bộ chiều ngang */
+    height: 200px;          /* Chiều cao cố định */
+    object-fit: contain;    /* Hiển thị toàn bộ ảnh, không bị cắt */
+    background-color: #f8f9fa; /* Màu nền nếu ảnh không đủ kích thước */
+    padding: 10px; /* Thêm padding để ảnh không dính sát mép */
+}
+
+/* Tiêu đề sản phẩm */
+.card-title a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    color: #007bff;
+}
+
+/* Phần giá */
+.card-text.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Nút hành động */
+.card-footer .btn {
+    font-size: 14px;
+    padding: 5px 10px;
+}
